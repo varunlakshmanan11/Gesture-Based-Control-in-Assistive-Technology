@@ -47,7 +47,7 @@ source install/setup.bash
 🎮 Usage
 In one terminal, Run Gesture Recognition
 ```bash
-ros2 run
+ros2 run handgestures handcontroller
 ```
 In other terminal, Run Control DexHand
 ```bash
