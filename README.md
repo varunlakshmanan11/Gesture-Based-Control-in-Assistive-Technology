@@ -35,6 +35,8 @@ sudo apt install python3-pip
 ```bash
 mkdir -p ~/ handgestureWS/src
 ```
+### Place the ```handgestures``` package in ```src``` folder
+
 ###  Set Up ROS2 Workspace
 bash
 ```
@@ -43,11 +45,11 @@ colcon build
 source install/setup.bash
 ```
 🎮 Usage
-Run Gesture Recognition
+In one terminal, Run Gesture Recognition
 ```bash
-python3 scripts/gesture_recognition.py
+ros2 run
 ```
-Control DexHand
+In other terminal, Run Control DexHand
 ```bash
 ros2 launch dexhand_gesture_controller simulation.launch.py
 ```
