@@ -22,7 +22,7 @@ sudo apt update && sudo apt install -y ros-humble-desktop python3-opencv
 pip install mediapipe opencv-python numpy
 ```
 
-#2️⃣ Clone the Repository
+### 2️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-username/Gesture-Based-Control-AT.git
 cd Gesture-Based-Control-AT
