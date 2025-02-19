@@ -15,29 +15,27 @@ This project enables **gesture-based control** for assistive technology using **
 ---
 
 ## Prerequsites
-Ubuntu 22.04.5 (Jammy Jellyfish) LTS 
-ROS2 Humble - https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
-Dexhand Rviz Package:
-
-You need the Dexhand Package for the Rviz Visualiztion. Follow the steps from the below repository to install the package in your system.
-
-https://github.com/iotdesignshop/dexhand_ros2_meta
-
-## 🛠 Installation
-
-### 1️⃣ Install Dependencies
+- Ubuntu 22.04.5 (Jammy Jellyfish) LTS 
+- ROS2 Humble - https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
+- Dexhand Rviz Package:
+  You need the Dexhand Package for the Rviz Visualiztion. Follow the steps from the below repository to install the package in your system.
+  https://github.com/iotdesignshop/dexhand_ros2_meta
+- Google Mediapipe Library. Which can be Installed by running the following command:
 ```bash
-sudo apt update && sudo apt install -y ros-humble-desktop python3-opencv
-pip install mediapipe opencv-python numpy
+pip install mediapipe
+```
+- If you dont have ```pip``` installed in your system , run the following command below:
+```bash
+sudo apt install python3-pip
 ```
 
-### 2️⃣ Clone the Repository
-```bash
-git clone https://github.com/your-username/Gesture-Based-Control-AT.git
-cd Gesture-Based-Control-AT
-```
+## 🛠 Installation for Hand Gesture Control
 
-#3️⃣ Set Up ROS2 Workspace
+### Create a Workspace wiht a ```src``` folder in it
+```bash
+mkdir -p ~/ handgestureWS/src
+```
+###  Set Up ROS2 Workspace
 bash
 ```
 source /opt/ros/humble/setup.bash
@@ -51,11 +49,7 @@ python3 scripts/gesture_recognition.py
 ```
 Control DexHand
 ```bash
-ros2 launch dexhand_simulation dexhand_control.launch.py
-```
-Control TurtleBot
-```bash
-ros2 launch turtlebot3_gesture_control turtlebot_control.launch.py
+ros2 launch dexhand_gesture_controller simulation.launch.py
 ```
 
 #🧠 How It Works
@@ -70,3 +64,10 @@ ros2 launch turtlebot3_gesture_control turtlebot_control.launch.py
 - ✅ Support for custom gestures
 - ✅ Add more intuitive hand signals for control
 - ✅ Improve gesture recognition accuracy
+
+# Acknowledgement
+
+This project utilizes the Rviz package from the following GitHub repository:
+🔗 iotdesignshop/dexhand_ros2_meta
+
+We acknowledge and appreciate the contributions of the developers and maintainers of this repository, which have been instrumental in the development of our project
