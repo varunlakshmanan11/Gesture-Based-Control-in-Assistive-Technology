@@ -70,6 +70,6 @@ ros2 launch dexhand_gesture_controller simulation.launch.py
 # Acknowledgement
 
 This project utilizes the Rviz package from the following GitHub repository:
-🔗 iotdesignshop/dexhand_ros2_meta
+https://github.com/iotdesignshop/dexhand_ros2_meta
 
 We acknowledge and appreciate the contributions of the developers and maintainers of this repository, which have been instrumental in the development of our project
