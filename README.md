@@ -14,6 +14,15 @@ This project enables **gesture-based control** for assistive technology using **
 
 ---
 
+## Prerequsites
+Ubuntu 22.04.5 (Jammy Jellyfish) LTS 
+ROS2 Humble - https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
+Dexhand Rviz Package:
+
+You need the Dexhand Package for the Rviz Visualiztion. Follow the steps from the below repository to install the package in your system.
+
+https://github.com/iotdesignshop/dexhand_ros2_meta
+
 ## 🛠 Installation
 
 ### 1️⃣ Install Dependencies
