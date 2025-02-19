@@ -27,7 +27,7 @@ pip install mediapipe opencv-python numpy
 git clone https://github.com/your-username/Gesture-Based-Control-AT.git
 cd Gesture-Based-Control-AT
 ```
-3️⃣ Set Up ROS2 Workspace
+###3️⃣ Set Up ROS2 Workspace
 bash
 ```
 source /opt/ros/humble/setup.bash
@@ -48,15 +48,15 @@ Control TurtleBot
 ros2 launch turtlebot3_gesture_control turtlebot_control.launch.py
 ```
 
-###🧠 How It Works
-Mediapipe Hand Tracking: Captures landmarks of the user's hand.
-Gesture Classification: Recognizes specific gestures (e.g., fist, open palm).
-Command Mapping: Converts gestures into ROS2 messages.
-ROS2 Communication: Sends the commands to DexHand and TurtleBot.
+##🧠 How It Works
+- Mediapipe Hand Tracking: Captures landmarks of the user's hand.
+- Gesture Classification: Recognizes specific gestures (e.g., fist, open palm).
+- Command Mapping: Converts gestures into ROS2 messages.
+- ROS2 Communication: Sends the commands to DexHand and TurtleBot.
 📸 Demo
 
 
-###🛠 Future Improvements
-✅ Support for custom gestures
-✅ Add more intuitive hand signals for control
-✅ Improve gesture recognition accuracy
+##🛠 Future Improvements
+- ✅ Support for custom gestures
+- ✅ Add more intuitive hand signals for control
+- ✅ Improve gesture recognition accuracy
